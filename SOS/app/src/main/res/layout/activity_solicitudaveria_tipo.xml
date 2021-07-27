@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/Blanco"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:background="@color/Negro"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Barra"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="enterAlwaysCollapsed"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@drawable/gradiant">
+            <ImageButton
+                android:id="@+id/Atras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_left_arrow"
+                android:padding="@dimen/PaddingBoton"
+                android:layout_gravity="left"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <fonts.TextViewMontserrat
+                android:id="@+id/TituloToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_solicitudaveria"
+                android:layout_gravity="center"
+                android:textColor="@color/Blanco"
+                android:textSize="@dimen/TamañoTextoToolbar" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/AppBarLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+            android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/MargenIzquierdaFormulario"
+                android:rotation="@dimen/angulo"
+                android:layout_height="@dimen/MargenIzquierdaFormulario"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/MargenFormularioEstandar"
+                app:srcCompat="@drawable/ic_left_arrowcool" />
+
+            <fonts.TextViewGotham
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/txt_seleccioneaveria"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/TamañoTextoToolbar" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+            android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+            android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenTopParaTarjetas"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <fonts.TextViewGotham
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/TamañoTextoEncabezado"
+                    android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/txt_tipo1"/>
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/ColorDegradado"
+                    android:layout_alignParentRight="true"
+                    android:checked="true" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenMinusculo"
+                android:layout_centerVertical="true"
+                android:background="@color/ColorTachado" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenTopParaTarjetas"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <fonts.TextViewGotham
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/TamañoTextoEncabezado"
+                    android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/txt_tipo2"/>
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/ColorDegradado"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenMinusculo"
+                android:layout_centerVertical="true"
+                android:background="@color/ColorTachado" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenTopParaTarjetas"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <fonts.TextViewGotham
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/TamañoTextoEncabezado"
+                    android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/txt_tipo3"/>
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/ColorDegradado"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenMinusculo"
+                android:layout_centerVertical="true"
+                android:background="@color/ColorTachado" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenTopParaTarjetas"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <fonts.TextViewGotham
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/TamañoTextoEncabezado"
+                    android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/txt_tipo4"/>
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/ColorDegradado"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenMinusculo"
+                android:layout_centerVertical="true"
+                android:background="@color/ColorTachado" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenTopParaTarjetas"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <fonts.TextViewGotham
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/TamañoTextoEncabezado"
+                    android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/txt_tipo5"/>
+
+                <RadioButton
+                    android:id="@+id/rb5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:buttonTint="@color/ColorDegradado"
+                    android:layout_alignParentRight="true"
+                    android:checked="false" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenMinusculo"
+                android:layout_centerVertical="true"
+                android:background="@color/ColorTachado" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenTopParaTarjetas"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <fonts.TextViewGotham
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/TamañoTextoEncabezado"
+                    android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/txt_tipo6"/>
+
+                <RadioButton
+                    android:id="@+id/rb6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:buttonTint="@color/ColorDegradado"
+                    android:checked="false" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/MargenMinusculo"
+                android:layout_centerVertical="true"
+                android:background="@color/ColorTachado" />
+        </LinearLayout>
+            <fonts.TextViewMavenRegular
+                android:id="@+id/btnguardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradiant"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                android:layout_marginRight="@dimen/MargenFormularioEstandar"
+                android:layout_marginTop="@dimen/MargenTarjeta"
+                android:gravity="center"
+                android:padding="@dimen/PaddingBoton"
+                android:text="@string/txt_siguiente"
+                android:textColor="@color/Blanco" />
+    </LinearLayout>
+</RelativeLayout>

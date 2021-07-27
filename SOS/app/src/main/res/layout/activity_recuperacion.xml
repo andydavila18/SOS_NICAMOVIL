@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:id="@+id/Relativo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/imagenfondo"
+                    android:background="@drawable/fotorecuperacion">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/circulologin"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/circulorecuperacion" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/Relativo"
+                    android:background="@color/ColorFondo"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/MargenIzquierdaFormulario">
+                        <fonts.TextViewGotham
+                            android:id="@+id/tvText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                            android:layout_marginRight="@dimen/MargenFormularioEstandar"
+                            android:text="@string/txt_recuperartitulo"
+                            android:textColor="@color/ColorTextoEspecial"
+                            android:textSize="@dimen/TamañoTextoEncabezado" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/MargenMinusculo"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                            android:layout_toLeftOf="@id/tvText"
+                            android:background="@color/ColorTachado" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/MargenMinusculo"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                            android:layout_toRightOf="@id/tvText"
+                            android:background="@color/ColorTachado" />
+
+                    </RelativeLayout>
+                    <fonts.TextViewMavenRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:textSize="@dimen/TamañoTextoEncabezado"
+                        android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+                        android:text="@string/txt_usuario"/>
+
+                    <fonts.MyTextView
+                        android:id="@+id/Usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_avatar"
+                        android:hint="@string/txt_usuariohint"
+                        android:padding="@dimen/PaddingEstandar"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas"
+                        android:nextFocusForward="@+id/Email" />
+
+                    <fonts.TextViewMavenRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:textSize="@dimen/TamañoTextoEncabezado"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:text="@string/txt_correo"/>
+
+                    <fonts.MyTextView
+                        android:id="@+id/Email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_gmail_logo"
+                        android:hint="@string/txt_correohint"
+                        android:padding="@dimen/PaddingEstandar"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas"
+                        android:nextFocusForward="@+id/btn_enviarcredenciales" />
+                    <com.andexert.library.RippleView
+                        android:id="@+id/more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenIzquierdaFormulario" rv_centered="true">
+                        <fonts.TextViewMavenRegular
+                            android:id="@+id/btn_enviarcredenciales"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradiant"
+                            android:gravity="center"
+                            android:padding="@dimen/PaddingBoton"
+                            android:text="@string/txt_enviarcredenciales"
+                            android:textColor="@color/Blanco" />
+                    </com.andexert.library.RippleView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <fonts.TextViewMavenRegular
+                            android:id="@+id/RegresarLogin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/TamañoTextoEncabezado"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                            android:padding="@dimen/PaddingBoton"
+                            android:text="@string/txt_regresarlogin"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

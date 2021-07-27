@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:id="@+id/Relativo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/imagenfondo"
+                    android:background="@drawable/fotologin">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/circulologin"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/circulologin" />
+                </FrameLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/Relativo"
+                    android:background="@color/ColorFondo"
+                    android:orientation="vertical">
+                    <fonts.TextViewMavenRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:textSize="@dimen/TamañoTextoEncabezado"
+                        android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+                        android:text="@string/txt_usuario"/>
+
+                    <fonts.MyTextView
+                        android:id="@+id/Usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_avatar"
+                        android:hint="@string/txt_usuariohint"
+                        android:padding="@dimen/PaddingEstandar"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas"
+                        android:nextFocusForward="@+id/Password" />
+
+                    <fonts.TextViewMavenRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:textSize="@dimen/TamañoTextoEncabezado"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:text="@string/txt_contraseña"/>
+
+                    <fonts.MyTextView
+                        android:id="@+id/Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_locked"
+                        android:inputType="textPassword"
+                        android:hint="@string/txt_contraseñahimt"
+                        android:padding="@dimen/PaddingEstandar"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas"
+                        android:nextFocusForward="@+id/btniniciar_sesion" />
+
+                    <fonts.TextViewMavenRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:textSize="@dimen/TamañoTextoEncabezado"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:text="@string/txt_soy"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="@dimen/PesoEstandar"
+                        android:orientation="horizontal">
+
+                        <fonts.MyTextView
+                            android:id="@+id/ClienteOpcion"
+                            android:layout_width="@dimen/PesoEstandarNulo"
+                            android:layout_weight="@dimen/PesoEstandarMitad"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                            android:textCursorDrawable="@null"
+                            android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                            android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                            android:focusable="false"
+                            android:background="@drawable/bordercontrol"
+                            android:text="@string/txt_cliente"
+                            android:textAlignment="center"
+                            android:padding="@dimen/PaddingEstandar"
+                            android:textColor="@color/ColorSeleccion"
+                            android:textSize="@dimen/TamañoTextoCajas"
+                            android:inputType="none"
+                            android:nextFocusForward="@+id/Password" />
+
+                        <fonts.MyTextView
+                            android:id="@+id/MecanicoOpcion"
+                            android:layout_width="@dimen/PesoEstandarNulo"
+                            android:layout_weight="@dimen/PesoEstandarMitad"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                            android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                            android:textCursorDrawable="@null"
+                            android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                            android:background="@drawable/bordercontrol"
+                            android:text="@string/txt_Mecanico"
+                            android:inputType="none"
+                            android:focusable="false"
+                            android:textAlignment="center"
+                            android:padding="@dimen/PaddingEstandar"
+                            android:textColor="@color/ColorCajaTexto"
+                            android:textSize="@dimen/TamañoTextoCajas"
+                            android:nextFocusForward="@+id/Password" />
+                    </LinearLayout>
+                        <fonts.TextViewMavenRegular
+                            android:id="@+id/btniniciar_sesion"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradiant"
+                            android:gravity="center"
+                            android:padding="@dimen/PaddingBoton"
+                            android:text="@string/txt_IniciarSesion"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                            android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                            android:layout_marginTop="@dimen/MargenIzquierdaFormulario"
+                            android:textColor="@color/Blanco" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <fonts.TextViewMavenRegular
+                            android:id="@+id/btn_enviarcredenciales"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="@dimen/TamañoTextoEncabezado"
+                            android:padding="@dimen/PaddingBoton"
+                            android:text="@string/txt_OlvidarContraseña"/>
+
+                        <fonts.TextViewMavenRegular
+                            android:id="@+id/btn_crearusuario"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/TamañoTextoEncabezado"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                            android:padding="@dimen/PaddingBoton"
+                            android:text="@string/txt_CrearUsuario"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

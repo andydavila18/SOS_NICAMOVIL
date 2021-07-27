@@ -1,0 +1,4 @@
+EndPoint : cifarmabd.cjmizkb8xrjc.us-east-2.rds.amazonaws.com
+NombreBD : sos
+Usuario : admin
+Contraseña : root12345

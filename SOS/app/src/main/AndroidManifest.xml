@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sos">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:icon="@mipmap/splash"
+        tools:replace="android:icon"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".controllers.activity.activity_splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controllers.activity.activity_listado_averias"
+            android:label="@string/title_activity_listado_averias"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activity.activity_usuariogeneral"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activity.activity_contacto"
+            android:label="@string/title_activity_contacto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activity.activity_seguimiento_averia"
+            android:label="@string/title_activity_seguimiento_averia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activity.activity_solicitudaveria_final"
+            android:label="@string/title_activity_solicitudaveria"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activity.activity_solicitudaveria_resumen"
+            android:label="@string/title_activity_solicitudaveria_resumen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".controllers.activity.activity_solicitudaveria_ubicacion" />
+        <activity
+            android:name=".controllers.activity.activity_solicitudaveria_tipo"
+            android:label="@string/title_activity_solicitudaveria_tipo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activity.activity_usuariocliente"
+            android:label="@string/title_activity_crearusuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activity.activity_recuperacion"
+            android:label="@string/title_activity_recuperacion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activity.activity_iniciomecanico"
+            android:label="@string/title_activity_iniciomecanico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activity.activity_iniciocliente"
+            android:label="@string/title_activity_iniciocliente"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".controllers.activity.activity_loginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <meta-data
+            android:name="com.here.android.maps.appid"
+            android:value="EVcfrXYTX00x2UQjrbVv" />
+        <meta-data
+            android:name="com.here.android.maps.apptoken"
+            android:value="J6Uq3gF2d8PLfigQthmkUg" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.fragments.fragmento_usuariocliente_datospersonales">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+        android:layout_marginTop="@dimen/MargenTarjeta"
+        android:background="@drawable/border">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/MargenTarjeta"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <fonts.TextViewGotham
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="match_parent"
+                        android:layout_weight="@dimen/tamaño_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                        android:gravity="center"
+                        android:text="@string/txt_usuario"
+                        android:textColor="@color/ColorTextoEspecial"
+                        android:textSize="@dimen/TamañoTextoEncabezado" />
+
+                    <fonts.MyTextView
+                        android:id="@+id/Usuario"
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_weight="@dimen/tamaño_caja"
+                        android:focusable="false"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_avatar"
+                        android:nextFocusForward="@+id/Password"
+                        android:padding="@dimen/PaddingMedio"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <fonts.TextViewGotham
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="match_parent"
+                        android:layout_weight="@dimen/tamaño_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                        android:gravity="center"
+                        android:text="@string/txt_contraseña"
+                        android:textColor="@color/ColorTextoEspecial"
+                        android:textSize="@dimen/TamañoTextoEncabezado" />
+
+                    <fonts.MyTextView
+                        android:id="@+id/Password"
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="@dimen/tamaño_caja"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_locked"
+                        android:inputType="textPassword"
+                        android:nextFocusForward="@+id/Nombre"
+                        android:padding="@dimen/PaddingMedio"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <fonts.TextViewGotham
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="match_parent"
+                        android:layout_weight="@dimen/tamaño_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                        android:gravity="center"
+                        android:text="@string/txt_nombre"
+                        android:textColor="@color/ColorTextoEspecial"
+                        android:textSize="@dimen/TamañoTextoEncabezado" />
+
+                    <fonts.MyTextView
+                        android:id="@+id/Nombre"
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:layout_weight="@dimen/tamaño_caja"
+                        android:drawableRight="@drawable/ic_name"
+                        android:nextFocusForward="@+id/Apellido"
+                        android:padding="@dimen/PaddingMedio"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <fonts.TextViewGotham
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="match_parent"
+                        android:layout_weight="@dimen/tamaño_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                        android:gravity="center"
+                        android:text="@string/txt_apellido"
+                        android:textColor="@color/ColorTextoEspecial"
+                        android:textSize="@dimen/TamañoTextoEncabezado" />
+
+                    <fonts.MyTextView
+                        android:id="@+id/Apellido"
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:layout_weight="@dimen/tamaño_caja"
+                        android:drawableRight="@drawable/ic_name"
+                        android:nextFocusForward="@+id/Telefono"
+                        android:padding="@dimen/PaddingMedio"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <fonts.TextViewGotham
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="match_parent"
+                        android:layout_weight="@dimen/tamaño_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                        android:gravity="center"
+                        android:text="@string/txt_direccion"
+                        android:textColor="@color/ColorTextoEspecial"
+                        android:textSize="@dimen/TamañoTextoEncabezado" />
+
+                    <fonts.MyTextView
+                        android:id="@+id/Direccion"
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_ubication"
+                        android:layout_weight="@dimen/tamaño_caja"
+                        android:nextFocusForward="@+id/Ciudad"
+                        android:padding="@dimen/PaddingMedio"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <fonts.TextViewGotham
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="match_parent"
+                        android:layout_weight="@dimen/tamaño_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                        android:gravity="center"
+                        android:text="@string/txt_Telefono"
+                        android:textColor="@color/ColorTextoEspecial"
+                        android:textSize="@dimen/TamañoTextoEncabezado" />
+
+                    <fonts.MyTextView
+                        android:id="@+id/Telefono"
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_call"
+                        android:layout_weight="@dimen/tamaño_caja"
+                        android:nextFocusForward="@+id/Email"
+                        android:padding="@dimen/PaddingMedio"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <fonts.TextViewGotham
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="match_parent"
+                        android:layout_weight="@dimen/tamaño_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                        android:gravity="center"
+                        android:text="@string/txt_ciudad"
+                        android:textColor="@color/ColorTextoEspecial"
+                        android:textSize="@dimen/TamañoTextoEncabezado" />
+
+                    <fonts.MyTextView
+                        android:id="@+id/Ciudad"
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_ubication"
+                        android:layout_weight="@dimen/tamaño_caja"
+                        android:nextFocusForward="@+id/Cedula"
+                        android:padding="@dimen/PaddingMedio"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <fonts.TextViewGotham
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="match_parent"
+                        android:layout_weight="@dimen/tamaño_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                        android:gravity="center"
+                        android:text="@string/txt_email"
+                        android:textColor="@color/ColorTextoEspecial"
+                        android:textSize="@dimen/TamañoTextoEncabezado" />
+
+                    <fonts.MyTextView
+                        android:id="@+id/Email"
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_gmail_logo"
+                        android:layout_weight="@dimen/tamaño_caja"
+                        android:nextFocusForward="@+id/Direccion"
+                        android:padding="@dimen/PaddingMedio"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:weightSum="1"
+                    android:orientation="horizontal">
+                    <fonts.TextViewGotham
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="match_parent"
+                        android:layout_weight="@dimen/tamaño_text"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                        android:gravity="center"
+                        android:text="@string/txt_cedula"
+                        android:textColor="@color/ColorTextoEspecial"
+                        android:textSize="@dimen/TamañoTextoEncabezado" />
+
+                    <fonts.MyTextView
+                        android:id="@+id/Cedula"
+                        android:layout_width="@dimen/PesoEstandarNulo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                        android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                        android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                        android:layout_weight="@dimen/tamaño_caja"
+                        android:background="@drawable/border"
+                        android:drawableRight="@drawable/ic_name"
+                        android:nextFocusForward="@+id/Cedula"
+                        android:padding="@dimen/PaddingMedio"
+                        android:textColor="@color/ColorCajaTexto"
+                        android:textSize="@dimen/TamañoTextoCajas" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/accioneslayout"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                    android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                    android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                    android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content">
+
+                    <com.andexert.library.RippleView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+                        android:layout_marginRight="@dimen/MargenFormularioEstandar"
+                        android:layout_marginTop="@dimen/MargenIzquierdaFormulario" rv_centered="true">
+                        <fonts.TextViewMavenRegular
+                            android:id="@+id/btnguardar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/gradientbotonespecial"
+                            android:gravity="center"
+                            android:padding="@dimen/PaddingBoton"
+                            android:text="@string/txt_guardar"
+                            android:textColor="@color/Blanco" />
+                    </com.andexert.library.RippleView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/UsuarioImagen"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+        android:src="@drawable/ic_bank" />
+
+</FrameLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/Blanco"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:background="@color/Negro"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Barra"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="enterAlwaysCollapsed"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@drawable/gradiant">
+            <ImageButton
+                android:id="@+id/Atras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_left_arrow"
+                android:padding="@dimen/PaddingBoton"
+                android:layout_gravity="left"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <fonts.TextViewMontserrat
+                android:id="@+id/TituloToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_solicitudaveria"
+                android:layout_gravity="center"
+                android:textColor="@color/Blanco"
+                android:textSize="@dimen/TamañoTextoToolbar" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/AppBarLayout"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/MargenIzquierdaFormulario"
+                android:layout_height="@dimen/MargenIzquierdaFormulario"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/MargenFormularioEstandar"
+                android:rotation="@dimen/angulo"
+                app:srcCompat="@drawable/ic_left_arrowcool" />
+
+            <fonts.TextViewGotham
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/txt_tituloinfoadicional"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/TamañoTextoToolbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+            android:layout_marginTop="@dimen/MargenFormularioEstandar"
+            android:layout_marginRight="@dimen/MargenFormularioEstandar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+                <fonts.MyTextView
+                    android:id="@+id/Final"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@dimen/tamaño_caja"
+                    android:background="@drawable/border"
+                    android:hint="@string/txt_extra"
+                    android:maxLines="7"
+                    android:lines="7"
+                    android:gravity="left"
+                    android:textAlignment="gravity"
+                    android:padding="@dimen/PaddingMedio"
+                    android:textColor="@color/ColorCajaTexto"
+                    android:textSize="@dimen/TamañoTextoCajas" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/MargenFormularioEstandar"
+            android:layout_marginRight="@dimen/MargenFormularioEstandar"
+            android:layout_marginTop="@dimen/MargenIzquierdaFormulario" rv_centered="true">
+            <fonts.TextViewMavenRegular
+                android:id="@+id/enviarsolicitud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradiant"
+                android:gravity="center"
+                android:padding="@dimen/PaddingBoton"
+                android:text="@string/txt_solicitar"
+                android:textColor="@color/Blanco" />
+        </com.andexert.library.RippleView>
+
+
+    </LinearLayout>
+</RelativeLayout>

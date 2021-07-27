@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/Blanco"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:background="@color/Negro"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Barra"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="enterAlwaysCollapsed"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@drawable/gradiant">
+
+            <ImageButton
+                android:id="@+id/Atras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="@dimen/PaddingBoton"
+                android:src="@drawable/ic_left_arrow" />
+
+            <fonts.TextViewMontserrat
+                android:id="@+id/TituloToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_listado_averias"
+                android:layout_gravity="center"
+                android:textColor="@color/Blanco"
+                android:textSize="@dimen/TamañoTextoToolbar" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/AppBarLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/MargenIzquierdaFormulario"
+                android:layout_height="@dimen/MargenIzquierdaFormulario"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/MargenFormularioEstandar"
+                android:rotation="@dimen/angulo"
+                app:srcCompat="@drawable/ic_left_arrowcool" />
+
+            <fonts.TextViewGotham
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/txt_solicitud"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/TamañoTextoToolbar" />
+        </LinearLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/Swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+            android:layout_marginRight="@dimen/MargenIzquierdaFormulario">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerLista"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF4B75</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name = "Blanco">#ffffff</color>
+    <color name = "Negro">#000</color>
+    <color name="ColorFondo">#FAFAFA</color>
+    <color name="ColorCajaTexto">#73787b</color>
+    <color name="ColorSeleccion">#FF4B75</color>
+    <color name="ColorTextoEspecial">#6f767e</color>
+    <color name="TextoEncabezados">#513C74</color>
+    <color name="ColorTachado">#f0f0f0</color>
+    <color name="ColorDegradado">#FF4B75</color>
+    <color name="ColorDolado">#efb810</color>
+</resources>

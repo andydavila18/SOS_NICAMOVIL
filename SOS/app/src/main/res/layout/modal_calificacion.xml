@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border">
+
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MargenArribaTopFormulario"
+        android:layout_marginLeft="@dimen/MargenTopParaTarjetas"
+        android:layout_marginRight="@dimen/MargenTopParaTarjetas"
+        android:layout_marginBottom="@dimen/MargenMinusculo"
+        android:saveEnabled="true"
+        android:progressTint="@color/ColorDolado"
+        android:secondaryProgressTint="@android:color/transparent"
+        android:numStars="5"/>
+
+    <fonts.TextViewGotham
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/txt_califica"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginBottom="@dimen/MargenIzquierdaFormulario"
+        android:textSize="@dimen/TamañoTextoToolbar" />
+    <fonts.TextViewMavenRegular
+        android:id="@+id/btncalificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbotonespecial"
+        android:layout_marginLeft="@dimen/MargenTopParaTarjetas"
+        android:layout_marginRight="@dimen/MargenTopParaTarjetas"
+        android:layout_marginBottom="@dimen/MargenArribaTopFormulario"
+        android:gravity="center"
+        android:padding="@dimen/PaddingBoton"
+        android:text="@string/txt_btn_califica"
+        android:textColor="@color/Blanco" />
+
+</LinearLayout>

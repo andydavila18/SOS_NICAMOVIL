@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/Blanco"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:background="@color/Negro"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Barra"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="enterAlwaysCollapsed"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@drawable/gradiant">
+
+
+            <ImageButton
+                android:id="@+id/Atras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_left_arrow"
+                android:layout_gravity="left"
+                android:padding="@dimen/PaddingBoton"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+            <fonts.TextViewMontserrat
+                android:id="@+id/TituloToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_activity_crearusuario"
+                android:layout_gravity="center"
+                android:textColor="@color/Blanco"
+                android:textSize="@dimen/TamañoTextoToolbar" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/AppBarLayout"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/opcioneslayout"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="@dimen/PesoEstandar"
+                android:orientation="horizontal">
+
+                <fonts.MyTextView
+                    android:id="@+id/DatosPersonales"
+                    android:layout_width="@dimen/PesoEstandarNulo"
+                    android:layout_weight="@dimen/PesoEstandarMitad"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                    android:layout_marginLeft="@dimen/MargenIzquierdaFormulario"
+                    android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                    android:focusable="false"
+                    android:background="@drawable/bordercontrol"
+                    android:text="@string/txt_datospersonales"
+                    android:textAlignment="center"
+                    android:padding="@dimen/PaddingEstandar"
+                    android:textColor="@color/ColorSeleccion"
+                    android:textSize="@dimen/TamañoTextoCajas"
+                    android:inputType="none"
+                    android:nextFocusForward="@+id/Password" />
+
+                <fonts.MyTextView
+                    android:id="@+id/DatosCarro"
+                    android:layout_width="@dimen/PesoEstandarNulo"
+                    android:layout_weight="@dimen/PesoEstandarMitad"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/MargenFormularioEstandar"
+                    android:layout_marginRight="@dimen/MargenIzquierdaFormulario"
+                    android:layout_marginTop="@dimen/MargenFormularioEstandar"
+                    android:background="@drawable/bordercontrol"
+                    android:text="@string/txt_carro"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:textAlignment="center"
+                    android:padding="@dimen/PaddingEstandar"
+                    android:textColor="@color/ColorCajaTexto"
+                    android:textSize="@dimen/TamañoTextoCajas"
+                    android:nextFocusForward="@+id/Password" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vplayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/opcioneslayout">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vpcliente"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.viewpager.widget.ViewPager>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

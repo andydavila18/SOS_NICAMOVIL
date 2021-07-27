@@ -1,0 +1,136 @@
+<resources>
+
+
+    <!-- Generales -->
+    <string name="title_activity_recuperacion">activity_recuperacion</string>
+    <string name="title_activity_crearusuario">Mi Perfil</string>
+    <string name="app_name">SOS - Nicaragua</string>
+    <string name="title_activity_iniciocliente">Inicio</string>
+    <string name="title_activity_iniciomecanico">Inicio</string>
+    <string name="title_activity_solicitudaveria">Solicitud de averia</string>
+    <string name="title_activity_solicitudaveria_ubicacion">Selecciona tu ubicación</string>
+    <string name="title_activity_seguidmiento_averia">Seguimiento de averia</string>
+    <string name="tittle_activity_contacto">Contacta con nosotros</string>
+    <string name="title_activity_listado_averias">Listado de averias</string>
+
+    <!-- Login -->
+    <string name="txt_usuario">Usuario</string>
+    <string name="txt_usuariohint">Ingrese un usuario</string>
+    <string name="txt_contraseña">Contraseña</string>
+    <string name="txt_contraseñahimt">Ingrese su contraseña</string>
+    <string name="txt_soy">Soy un</string>
+    <string name="txt_cliente">Cliente</string>
+    <string name="txt_Mecanico">Mecanico</string>
+    <string name="txt_IniciarSesion">Iniciar Sesión</string>
+    <string name="txt_OlvidarContraseña">¿Olvido su contraseña?</string>
+    <string name="txt_CrearUsuario">Crear Usuario</string>>
+
+    <!-- Recuperar Contraseña -->
+    <string name="txt_recuperartitulo">Complete los datos</string>
+    <string name="txt_correo">Correo Electronico</string>
+    <string name="txt_correohint">Ingrese su correo</string>
+    <string name="txt_enviarcredenciales">Enviar Credenciales</string>
+    <string name="txt_regresarlogin">Regresar al inicio de sesión</string>
+
+    <!-- Inicio -->
+    <string name="txt_asistencia">Asistencia</string>
+    <string name="txt_historico">Historico</string>
+    <string name="txt_perfil">Mi Perfil</string>
+    <string name="txt_ayuda">Ayuda</string>
+    <string name="txt_averia">Buscar Averias</string>
+    <string name="txt_averiasatendidas">Averias Atendidas</string>
+
+    <!-- Usuario -->
+    <string name="txt_datospersonales">Datos Personales</string>
+    <string name="txt_carro">Datos del carro</string>
+    <string name="txt_guardar">Guardar cambios</string>
+
+    <!-- Fragmento datos personales -->
+    <string name="txt_nombre">Nombre</string>
+    <string name="txt_apellido">Apellido</string>
+    <string name="txt_Telefono">Telefono</string>
+    <string name="txt_email">Correo electronico</string>
+    <string name="txt_direccion">Dirección</string>
+    <string name="txt_ciudad">Ciudad</string>
+    <string name="txt_cedula">Cedula</string>
+
+    <!-- Fragmento carro -->
+    <string name="txt_marca">Marca</string>
+    <string name="txt_año">Año</string>
+    <string name="txt_color">Color</string>
+    <string name="txt_modelo">Modelo</string>
+    <string name="txt_placa">Placa</string>
+    <string name="title_activity_solicitudaveria_tipo">solicitudaveria_tipo</string>
+
+    <!-- Actividad solicitud averia tipo -->
+    <string name="txt_seleccioneaveria">Seleccione el tipo de averia</string>
+    <string name="txt_tipo1">Arranque</string>
+    <string name="txt_tipo2">Falla Mecanica</string>
+    <string name="txt_tipo3">Falta de gasolina</string>
+    <string name="txt_tipo4">Cambio de llanta</string>
+    <string name="txt_tipo5">Grua</string>
+    <string name="txt_tipo6">Otro</string>
+    <string name="title_activity_ubicacion">activity_ubicacion</string>
+    <string name="title_activity_solicitudaveria_resumen">activity_solicitudaveria_resumen</string>
+
+    <!-- Actividad Resumen -->
+    <string name="txt_tituloreporteria">Datos del incidente</string>
+    <string name="txt_datoscarro">Datos de carro</string>
+    <string name="txt_datosincidente">Tipo de averia</string>
+    <string name="txt_datosubicacion">Ubicacion</string>
+    <string name="txt_latitud">Latitud</string>
+    <string name="txt_longitud">Longitud</string>
+    <string name="txt_infoadicional">Información adicional</string>
+    <string name="txt_calle">Calle</string>
+    <string name="txt_provincia">Provincia</string>
+    <string name="txt_departamento">Departamento</string>
+    <string name="txt_siguiente">Siguiente</string>
+
+
+    <!-- Actividad Detalles -->
+    <string name="txt_tituloinfoadicional">Información adicional</string>
+    <string name="txt_extra">Aca se escribe algun detalle adicional...</string>
+    <string name="txt_solicitar">Enviar solicitud</string>
+    <string name="title_activity_seguimiento_averia">seguimiento_averia</string>
+    <string name="title_activity_contacto">activity_contacto</string>
+
+    <!-- Actividad Seguimiento de averia -->
+    <string name="txt_datos_de_solicitud">Datos de la solicitud</string>
+    <string name="txt_datos_de_cliente1">Nombre Cliente</string>
+    <string name="txt_datos_de_cliente2">Vehiculo</string>
+    <string name="txt_datos_de_cliente3">Placa</string>
+    <string name="txt_datos_de_cliente4">Estado</string>
+    <string name="txt_datos_de_cliente5">Telefono</string>
+    <string name="txt_datos_de_cliente6">Latitud</string>
+    <string name="txt_datos_de_cliente7">Longitud</string>
+    <string name="txt_datos_de_cliente8">Atendido por</string>
+    <string name="txt_ubicacionentiempo">Ubicación del automovil</string>
+    <string name="txt_btnubuicacion">Atender</string>
+
+    <!-- Activity Contacto -->
+    <string name="txt_mensaje">Esribe un mensaje y cuentanos tus inquietudes</string>
+    <string name="txt_mensajeshint">Aca puedes escribir el mensaje...</string>
+
+    <!-- Usuario mecanico -->
+    <string name="txt_especialidades">Especialidades</string>
+
+    <!-- Fragmento usuario mecanico -->
+    <string name="txt_seleccionatusespecialides">Selecciona tus especialidades</string>
+
+
+    <!-- Actividad Listado averias-->
+    <string name="txt_solicitud">Solicitudes</string>
+    <string name="txt_tipo">Tipo</string>
+    <string name="txt_fecha">Fecha</string>
+    <string name="txt_botonfinal">Ver</string>
+    <string name="txt_atendida">Atendida por</string>
+
+    <!-- Modal -->
+    <string name="txt_califica">Califica tu experiencia</string>
+    <string name="txt_btn_califica">Calificar</string>
+
+</resources>
+
+
+
+
